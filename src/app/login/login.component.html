@@ -1,0 +1,24 @@
+<div class="parent">
+    <div class="card">
+        <h2>Login Form</h2>
+        <div class="login_register">
+            <a (click)="onLogin()" class="login" target="blank">Login</a>
+            <a [routerLink]="'/signup'" routerLinkActive="active" class="register">Signup</a>
+        </div>
+    
+        <form class="form">
+            <input type="email" name="EmailId" [(ngModel)]="loginObj.EmailId" placeholder="Email Adress" class="email">
+            <input type="password" name="Password" [(ngModel)]="loginObj.Password" placeholder="password" class="pass">
+        </form>
+    
+        <a href="#" class="fp">Forgot password?</a>
+    
+        <button type="button" (click)="onLogin()" class="login_btn">Login</button>
+    
+        <div class="footer_card">
+            <p>Not a member?</p>
+            <a  [routerLink]="'/signup'" routerLinkActive="active">Singup now</a>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

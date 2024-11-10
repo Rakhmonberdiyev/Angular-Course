@@ -1,0 +1,8 @@
+<app-left-sidebar
+  [isLeftSidebarCollapsed]="isLeftSidebarCollapsed()"
+  (changeIsLeftSidebarCollapsed)="changeIsLeftSidebarCollapsed($event)"
+/>
+<app-navbar [isLeftSidebarCollapsed]="isLeftSidebarCollapsed()"
+(changeIsLeftSidebarCollapsed)="changeIsLeftSidebarCollapsed($event)"></app-navbar>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,35 @@
+<html lang="fr">
+
+<body>
+
+    <div class="card">
+        <h2>Signup Form</h2>
+
+        <div class="login_register">
+            <a class="login" [routerLink]="'/login'" routerLinkActive="active">Login</a>
+            <a class="register" target="blank">Signup</a>
+        </div>
+        <form class="form">
+            <input type="text" placeholder="First Name" class="pass" [(ngModel)]="signUpObj.firstName" name="email"
+                required>
+            <input type="text" placeholder="Midle Name" class="pass" [(ngModel)]="signUpObj.middleName" name="password"
+                required>
+            <input type="text" placeholder="Last Name" class="pass" [(ngModel)]="signUpObj.lastName" name="email"
+                required>
+            <input type="number" placeholder="Mobile Number" class="pass" [(ngModel)]="signUpObj.mobileNo" name="password"
+                required>
+            <input type="email" placeholder="Email Address" class="email" [(ngModel)]="signUpObj.emailId" name="email"
+                required>
+            <input type="password" placeholder="Password" class="pass" [(ngModel)]="signUpObj.password" name="password"
+                required>
+            <input type="password" placeholder="Confirm Password" class="confirm_pass"
+                [(ngModel)]="Obj.confirmPassword" name="confirmPassword" required>
+            <button class="login_btn" (click)="signUp()">Singup</button>
+        </form>
+
+        <a href="#" class="fp">Forgot password?</a>
+    </div>
+
+</body>
+
+</html>
