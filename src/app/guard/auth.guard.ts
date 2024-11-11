@@ -9,7 +9,7 @@ debugger;
   if(localData != null) {
     return true;
   } else {
-    router.navigateByUrl("login");
+    router.navigateByUrl("welcome");
     return false;
   }
   

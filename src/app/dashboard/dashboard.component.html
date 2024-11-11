@@ -1,14 +1,13 @@
-<main class="todo-container">
-  <div class="add-task">
+<main class="todo-container" [ngClass]="{ 'unvisiable': !isLogin}" >
+  <div class="add-task"  >
     <input [(ngModel)]="newTaskName" placeholder="Enter new task" (keyup.enter)="addTask()" />
     <input [(ngModel)]="newDueDate" type="datetime-local" placeholder="Due Date" />
-    <!-- <input [(ngModel)]="newTags" placeholder="Tags (comma-separated)" /> -->
     <button (click)="addTask()">Add</button>
   </div>
 
   <ul class="task-list">
     <li *ngFor="let toDoItem of toDoList; let i = index" [ngClass]="{'completed': toDoItem.isCompleted}">
-      <input type="checkbox" (change)="isComplated(i)" [(checked)]="toDoItem.isCompleted" />
+      <input type="checkbox" (change)="isComplated(i)" [(ngModel)]="toDoItem.isCompleted" />
       <input
         #taskinput
         id="taskInTable"
@@ -16,25 +15,18 @@
         [readonly]="!toDoItem.isEditable"
         style="caret-color: transparent;"
       />
-      <input id="Date-table"
+      <input
+        id="Date-table"
         [(ngModel)]="toDoItem.dueDate"
         [readonly]="!toDoItem.isEditable"
         type="datetime-local"
         style="caret-color: transparent;"
       />
-      <!-- <input
-        [(ngModel)]="toDoItem.tags"
-        [readonly]="!toDoItem.isEditable"
-        placeholder="Tags"
-        style="caret-color: transparent;"
-      /> -->
       <button (click)="editTask(i)" [disabled]="toDoItem.isEditable" class="edit-btn">Edit</button>
       <button (click)="updateTask(i, toDoItem)" [disabled]="!toDoItem.isEditable" class="save-btn">Save</button>
       <button (click)="deleteTask1(toDoItem.itemId)" class="delete-btn">Delete</button>
     </li>
-    <!-- <button (click)="fetchTasks() "></button> -->
+    <!-- <button (click)="fetchTasks()"></button> -->
   </ul>
 </main>
-<div class="main-content">
-  <router-outlet></router-outlet>
-</div>
+

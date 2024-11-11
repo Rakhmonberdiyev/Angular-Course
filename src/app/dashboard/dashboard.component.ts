@@ -1,5 +1,5 @@
-import { CommonModule, NgClass, NgFor, } from '@angular/common';
-import { Component, input, inject } from '@angular/core';
+import { CommonModule, NgClass, NgFor , NgIf } from '@angular/common';
+import { Component, input, inject , OnInit, output} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { AuthService } from '../login/authServe';
 
@@ -25,7 +25,7 @@ export interface TodoItem {
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css',
 })
-export class DashboardComponent {
+export class DashboardComponent implements OnInit {
   toDoList: TodoItem[] = [];
   newTaskName: string = '';
   newDueDate: string = '';
@@ -35,6 +35,7 @@ export class DashboardComponent {
 
   newTags: string = '';
   selectedTodoItem: TodoItem | null = null;
+
 
 
   newTodoItem1: any = {
@@ -51,13 +52,14 @@ export class DashboardComponent {
   http = inject(HttpClient);
   isLogin = false;
 
+  
+
   ngOnInit() {
     this.authService.currentLoginStatus.subscribe((status) => {
       this.isLogin = status; });
       if(this.isLogin){
         this.fetchTasks()
-      }
-      
+      }  
   }
 
 

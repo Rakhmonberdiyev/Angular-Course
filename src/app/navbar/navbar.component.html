@@ -1,11 +1,11 @@
 <div class="layout">
     <nav  [ngClass]="isLeftSidebarCollapsed() ? 'sidenav-collapsed' : 'navbar'" >
       <div class="navbar-item">
-        <a [routerLink]="'profile'" routerLinkActive="active">Profile</a>
+        <a [routerLink]="'profile'" routerLinkActive="active"  [ngClass]="{ 'disabled-link': !isLogin }" >Profile</a>
       </div>
         <div class="navbar-item search-bar">
             <input type="text" placeholder="Search..." (keyup.enter)="search()">
-            <button (click)="search()">🔍</button>
+            <button (click)="search()" >🔍</button >
         </div>
       <div class="navbar-item language-switcher" (click)="toggleDropdown()">
         <span>Language</span>
@@ -27,7 +27,7 @@
       </div>
     }
      @if(isLogin){ <div class="navbar-item login-button">
-      <a (click)="onLogout()">Logout</a>
+      <a (click)="onLogout()" href="#start">Logout</a>
       </div>
     }
     </nav>

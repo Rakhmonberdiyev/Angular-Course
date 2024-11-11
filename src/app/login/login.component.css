@@ -3,7 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: none;
+    margin-top: auto;
+    margin-bottom: 15rem;
   }
   
   .card{

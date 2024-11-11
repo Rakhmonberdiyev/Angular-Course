@@ -1,6 +1,6 @@
 
 .todo-container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     margin-top: 1rem;
     padding: 20px;
@@ -102,5 +102,8 @@
   }
   .task-list .edit-btn:hover {
     background-color: #120af2;
+  }
+  .todo-container.unvisiable {
+    display: none;
   }
   

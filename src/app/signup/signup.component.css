@@ -9,10 +9,12 @@
 
 body{
   /* margin-top: 60px; */
-  background-color: none;   /**/
+  background-color: none;   
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 9rem;
+  margin-top: auto;
 }
 
 .card{

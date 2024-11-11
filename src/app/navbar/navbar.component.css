@@ -86,14 +86,8 @@
     }
   }
   
-  /* .main-content {
-    padding: 20px;
-    margin-left: 16.5625rem; 
-    width: 100%;
-    overflow-y: auto;
+  .disabled-link {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
   }
-   */
-  /* .sidenav-collapsed + .main-content {
-    margin-left: 5rem;
-  } */
-  

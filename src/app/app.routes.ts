@@ -7,6 +7,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { authGuard } from './guard/auth.guard';
 import { SignupComponent } from './signup/signup.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -16,5 +17,7 @@ export const routes: Routes = [
   { path: 'pages', component: PagesComponent },
   { path: 'profile', component: ProfileComponent},
   { path: 'login', component: LoginComponent},
-  { path: 'signup', component: SignupComponent}  
+  { path: 'signup', component: SignupComponent},  
+  { path: 'welcome', component: WelcomeComponent}  
+
 ];
