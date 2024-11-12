@@ -8,15 +8,15 @@ body {
 }
 #hero {
     
-    background: linear-gradient(to bottom, #032030, #032030, #022B42,#004D74,#006494,#326179, #487996,#81a4b8, #85949c); /* Adjust gradient colors */
+    background: linear-gradient(to bottom, #032030, #032030, #022B42,#004D74,#006494,#326179, #487996,#81a4b8, #85949c);
     border-radius:20px 20px 20px 20px;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white; /* Ensure text is readable on your background */
-    padding: 0 20px; /* Add some padding for responsiveness */
+    color: white;
+    padding: 0 20px;
 }
 
 .hero-content {
@@ -24,13 +24,13 @@ body {
 }
 
 h1.animate-text {
-    font-size: 5rem; /* Increase font size */
+    font-size: 5rem;
     margin-bottom: 20px;
     font-weight: bold;
     letter-spacing: 1px;
-    animation: fadeIn 2s ease-in-out; /* Add animation if desired */
+    animation: fadeIn 2s ease-in-out;
     color: #fff;
-    text-shadow: 0px 4px 10px rgba(0,0,0,0.5); /* Add shadow for better visibility */
+    text-shadow: 0px 4px 10px rgba(0,0,0,0.5);
 }
 
 p.animate-text {
