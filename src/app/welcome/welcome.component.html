@@ -1,0 +1,171 @@
+<body >
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1 class="animate-text">Welcome to MyWork</h1>
+                <p class="animate-text">Raximberdi Raxmonberdiyev</p>
+                <a [routerLink]="'/login'" routerLinkActive="active" class="cta-button">Get Started</a>
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <a href="https://coursera.org/share/ad3109fd4085530d41974e7ca50ad17f" class="gallery-item">
+                        <img src="https://c02.purpledshub.com/uploads/sites/47/2023/07/Autumn.jpg?w=1200" alt="Gallery 1">
+                    </a>
+                    <a href="C:/Users/mrw/Desktop/New%20folder/2.jpg" class="gallery-item">
+                        <img src="https://img.freepik.com/premium-photo/pumpkin-some-gourds-are-table-with-some-autumn-leaves_1092808-40629.jpg" alt="Gallery 2">
+                    </a>
+                    <a href="C:/Users/mrw/Desktop/New%20folder/3.jpg" class="gallery-item">
+                        <img src="https://st3.depositphotos.com/1020618/17070/i/450/depositphotos_170705688-stock-photo-autumn-forest-beautiful-rural-scenery.jpg" alt="Gallery 3">
+                    </a>
+                    <a href="C:/Users/mrw/Desktop/New%20folder/4.jpg" class="gallery-item">
+                        <img src="https://b1170657.smushcdn.com/1170657/wp-content/uploads/2021/09/autumn_trees_and_bridge.jpg?lossy=1&strip=1&webp=1" alt="Gallery 4">
+                    </a>
+                    <a class="gallery-item">
+                        <img src="https://www.visitscotland.com/binaries/content/gallery/visitscotland/cms-images/2024/09/03/lady-marys-walk">
+                    </a>
+                    <a href="C:/Users/mrw/Desktop/New%20folder/2.jpg" class="gallery-item">
+                        <img src="https://storage.googleapis.com/pod_public/1300/118131.jpg" alt="Gallery 2">
+                    </a>
+                    <a href="C:/Users/mrw/Desktop/New%20folder/3.jpg" class="gallery-item">
+                        <img src="https://img.freepik.com/premium-photo/autumn-leaves-with-pumpkin_908985-21807.jpg" alt="Gallery 3">
+                    </a>
+                    <a href="C:/Users/mrw/Desktop/New%20folder/4.jpg" class="gallery-item">
+                        <img src="https://www.southernliving.com/thmb/K712e7wIQtq6jYGEAl4_0v37oMU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/al_lookout_mountain_scenic_parkway_-1-72a808f99b154fefba60034136b6e36c.jpg" alt="Gallery 4">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="product">
+            <div class="product-container">
+                <h2>Product</h2>
+                <div class="product-item">
+                    <img src="https://www.sketchappsources.com/resources/source-image/to-do-app-farianzum.png" alt="Product Image">
+                    <div class="product-info">
+                        <h3>To Do List</h3>
+                        <p>This is just a to do application website to show that my knwolidge in Angular 18</p>
+                        <p>Duration short time</p>
+                        <a  class="cta-button" (click)="showThumbsUp()">Liked</a>
+                        <div *ngIf="showSticker" class="thumbs-up-sticker">👍</div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+
+            <div class="features-scroll-wrapper">
+                <div class="features-container">
+                    <a href="C:/Users/mrw/Desktop/New%20folder/1.jpg" class="feature-item">
+                        <img src="https://itproger.com/img/courses/x1476977240.jpg.pagespeed.ic.G4YP3zOjcR.jpg" alt="Feature 1">
+                        <h3>HTML</h3>
+                        <p>Details about feature 1.</p>
+                    </a>
+                    <a href="C:/Users/mrw/Desktop/New%20folder/2.jpg" class="feature-item">
+                        <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/creative-css3-tutorials-2.jpg" alt="Feature 2">
+                        <h3>CSS</h3>
+                        <p>Details about feature 2.</p>
+                    </a>
+                    <a href="C:/Users/mrw/Desktop/New%20folder/3.jpg" class="feature-item">
+                        <img src="https://media.licdn.com/dms/image/D4D12AQGB2QPC4G45IQ/article-cover_image-shrink_720_1280/0/1707750533629?e=2147483647&v=beta&t=4gFOtQUWUWwqjrJz3fWVXbKxFCACSgiok9HZBdpptig" alt="Feature 3">
+                        <h3>TypeScript</h3>
+                        <p>Details about feature 3.</p>
+                    </a>
+                    <a href="C:/Users/mrw/Desktop/New%20folder/4.jpg" class="feature-item">
+                        <img src="https://cdn.prod.website-files.com/6320125ace536b6ad148eca3/6663074b513f643d4e8f133d_Banner-%20Angular%2018%20Features%20and%20Updates.webp" alt="Feature 4">
+                        <h3>Angular</h3>
+                        <p>Details about feature 4.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-list">
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="#">Website Templates</a></li>
+                        <li><a href="#">Website Builder</a></li>
+                        <li><a href="#">Website Design</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">App Market</a></li>
+                        <li><a href="#">Web Hosting</a></li>
+                        <li><a href="#">Domain Names</a></li>
+                        <li><a href="#">Website Accessibility</a></li>
+                        <li><a href="#">Mobile App Builder</a></li>
+                    </ul>
+                </div>
+                <div class="about-list">
+                    <h3>Solutions</h3>
+                    <ul>
+                        <li><a href="#">Online Store</a></li>
+                        <li><a href="#">Online Booking</a></li>
+                        <li><a href="#">Restaurant Website</a></li>
+                        <li><a href="#">Blog Website</a></li>
+                        <li><a href="#">Portfolio Website</a></li>
+                        <li><a href="#">eCommerce Website</a></li>
+                        <li><a href="#">Studio</a></li>
+                        <li><a href="#">Enterprise Solutions</a></li>
+                        <li><a href="#">Student Website</a></li>
+                    </ul>
+                </div>
+                <div class="about-list">
+                    <h3>Professional Tools</h3>
+                    <ul>
+                        <li><a href="#">Logo Maker</a></li>
+                    </ul>
+                    <h3>Learn</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Privacy and Security Hub</a></li>
+                        <li><a href="#">SEO Learning Hub</a></li>
+                        <li><a href="#">Encyclopedia</a></li>
+                    </ul>
+                </div>
+                <div class="about-list">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Hire a Professional</a></li>
+                        <li><a href="#">Report Abuse</a></li>
+                        <li><a href="#">System Status</a></li>
+                    </ul>
+                </div>
+                <div class="about-list">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">Press & Media</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Capital</a></li>
+                        <li><a href="#">Accessibility Statement</a></li>
+                        <li><a href="#">Patent Notice</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                    <h3>About</h3>
+                    <p><a href="#contact">Contact Us</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="signup">
+            <div class="signup-container">
+                <h2>Feel free for proposal</h2>
+                <p>Dont hesitate to email.</p>
+                <form id="signup-form">
+                    <input type="text" placeholder="Comment" required>
+                    <button type="submit">Hire Me</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 11. 11.  2024 MyBrand.</p>
+    </footer>
+</body>
